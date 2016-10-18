@@ -1,0 +1,8 @@
+{
+	"id": "<%= DappId %>",
+	"name": "<%= DappName %>",
+	"description": "<%= Description %>",
+	"version": "<%= DappVersion %>",
+	"author": "<%= Author %>",
+	"iconUrl": "images/title.png"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "generator-ethdapp",
+  "version": "0.2.0",
+  "description": "Yeoman ethdapp generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "chevdor/generator-ethdapp",
+  "author": {
+    "name": "Chevdor",
+    "email": "",
+    "url": "https://github.com/chevdor"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "ethdapp",
+    "ethereum",
+    "dapp",
+    "smart-contract",
+    "blockchain"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.17.0",
+    "chalk": "^0.5.0",
+    "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.8.5"
+  }
+}
