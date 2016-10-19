@@ -14,7 +14,7 @@ endif::env-github[]
 
 == First look
 
-image::https://asciinema.org/a/86834.png[link='https://asciinema.org/a/86834']
+image::https://asciinema.org/a/89762.png[link='https://asciinema.org/a/89762']
 
 == Getting Started
 
