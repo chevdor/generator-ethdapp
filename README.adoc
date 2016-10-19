@@ -14,7 +14,7 @@ endif::env-github[]
 
 == First look
 
-[![asciicast](https://asciinema.org/a/86834.png)](https://asciinema.org/a/86834)
+https://asciinema.org/a/86834[image:https://asciinema.org/a/86834.png[]]
 
 == Getting Started
 
