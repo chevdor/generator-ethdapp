@@ -7,10 +7,14 @@ v0.1, 2014-08-24
 :endash:
 
 ifdef::env-github[]
-image:http://img.shields.io/travis/ethdapp/ethdapp/master.svg[Build Status, link="https://travis-ci.org/chevdor/generator-ethdapp"]
+image:https://travis-ci.org/chevdor/generator-ethdapp.svg?branch=master["Build Status", link="https://travis-ci.org/chevdor/generator-ethdapp"]
 endif::env-github[]
 
 :proj: generator-ethdapp
+
+== First look
+
+image::https://asciinema.org/a/89762.png[link='https://asciinema.org/a/89762']
 
 == Getting Started
 
