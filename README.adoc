@@ -59,10 +59,16 @@ Yeoman has a heart of gold. He's a person with feelings and opinions, but he's v
 
 If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
 
-== Generating you Dapp
+== Generating your Dapp
 
+For a generic Dapp:
 ```bash
 yo ethdapp
+```
+
+For a Dapp taylored to Parity:
+```bash
+yo ethdapp:parity
 ```
 
 Then answer the questions. Once you are done, run the deploy script:
@@ -70,7 +76,12 @@ Then answer the questions. Once you are done, run the deploy script:
 ./deploy.sh
 ```
 
-Then (re)start Parity. You will see your app listed:
+Then (re)start Parity:
+```bash
+parity ui
+```
+
+You will see your app listed there:
 
 image:images/parity.png[]
 
