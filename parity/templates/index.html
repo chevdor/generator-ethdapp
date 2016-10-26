@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="us">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        <%= DappName %>
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel='stylesheet' type='text/css'>
+    <link href="app.css" rel='stylesheet' type='text/css'>
+    <script src="/parity-utils/parity.js"></script>
+</head>
+
+<body>
+    <div class="ui container">
+        <h1 class="ui header"><%= DappName %></h1>
+        <div class="ui raised segment">
+            <p>This is your generated Dapp, especially taylored for Parity. Now it is your turn to make <b><%= DappName %></b> the best DAPP ever!</p>
+            <p>For now, we created a very simple version that shows the current block number using the parity subscription API.</p>
+        </div>
+        <h2>Current block</h2>
+        <p id="currentBlock"></p>
+    </div>
+
+    <script   src="https://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
