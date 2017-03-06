@@ -1,4 +1,5 @@
 'use strict';
+
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
@@ -69,7 +70,7 @@ var EthDappGenerator = yeoman.generators.Base.extend({
             this.src.copy('app.css', 'app.css');
 
             this.directory('images', 'images', function(body, src, dest, options) {
-              console.log(' + ' + src);
+                console.log(' + ' + src);
             })
         },
 
