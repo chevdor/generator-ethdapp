@@ -1,3 +1,3 @@
 echo "Deploying your DAPP..."
-cp -Rpf . ~/.parity/dapps/<%= DappId %>.app
+cp -Rpf . "<%= DappPath %><%= DappId %>.app"
 echo "Done! Don´t forget to restart Parity"
