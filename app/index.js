@@ -19,7 +19,7 @@ function getDappPath() {
             break;
 
         case 'win32':
-            return os.homedir() + '\\AppData\Roaming\\io.parity.ethereum\\dapps\\'
+            return os.homedir() + '\\AppData\\Roaming\\io.parity.ethereum\\dapps\\'
             break;
 
             // case 'sunos': 
