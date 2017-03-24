@@ -4,7 +4,7 @@ var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
-const os = require('os');
+var os = require('os');
 
 function getDappPath() {
     switch (process.platform) {
