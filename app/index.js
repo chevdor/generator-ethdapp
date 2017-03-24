@@ -94,6 +94,7 @@ var EthDappGenerator = yeoman.generators.Base.extend({
             this.template('LICENSE');
             this.template('index.html');
             this.template('deploy.sh');
+            this.template('deploy.bat');
 
             this.src.copy('app.js', 'app.js');
             this.src.copy('app.css', 'app.css');
