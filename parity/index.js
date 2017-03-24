@@ -3,6 +3,29 @@ var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
+const os = require('os');
+
+function getDappPath() {
+    switch (process.platform) {
+        // OS-X
+        case 'darwin':
+            return os.homedir() + '/Library/Application Support/io.parity.ethereum/dapps/';
+            break;
+            // Linux
+        case 'freebsd':
+        case 'linux':
+            return os.homedir() + '/.local/share/io.parity.ethereum/dapps/'
+            break;
+
+        case 'win32':
+            return os.homedir() + '\\AppData\Roaming\\io.parity.ethereum\\dapps\\'
+            break;
+
+            // case 'sunos': 
+        default:
+            throw Exception(process.platform + ' is not currently supported. Feel free to open an issue in Github.')
+    }
+}
 
 var EthDappGenerator = yeoman.generators.Base.extend({
     initializing: function() {
@@ -43,6 +66,11 @@ var EthDappGenerator = yeoman.generators.Base.extend({
             name: 'DappVersion',
             message: 'What version do we start with?',
             default: '0.1.0'
+        }, {
+            type: 'input',
+            name: 'DappPath',
+            message: 'Where shall we deploy this Dapp?',
+            default: getDappPath()
         }];
 
         this.prompt(prompts, function(props) {
@@ -52,7 +80,7 @@ var EthDappGenerator = yeoman.generators.Base.extend({
             this.DappId = props.DappId;
             this.Description = props.Description;
             this.DappVersion = props.DappVersion;
-
+            this.DappPath = props.DappPath;
             done();
         }.bind(this));
     },
@@ -69,7 +97,7 @@ var EthDappGenerator = yeoman.generators.Base.extend({
             this.src.copy('app.css', 'app.css');
 
             this.directory('images', 'images', function(body, src, dest, options) {
-              console.log(' + ' + src);
+                console.log(' + ' + src);
             })
         },
 
