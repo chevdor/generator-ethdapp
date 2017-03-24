@@ -43,6 +43,11 @@ var EthDappGenerator = yeoman.generators.Base.extend({
             name: 'DappVersion',
             message: 'What version do we start with?',
             default: '0.1.0'
+        }, {
+            type: 'input',
+            name: 'DappPath',
+            message: 'Where shall we deploy this Dapp?',
+            default: getDappPath()
         }];
 
         this.prompt(prompts, function(props) {
@@ -52,7 +57,7 @@ var EthDappGenerator = yeoman.generators.Base.extend({
             this.DappId = props.DappId;
             this.Description = props.Description;
             this.DappVersion = props.DappVersion;
-
+            this.DappPath = props.DappPath;
             done();
         }.bind(this));
     },
@@ -69,7 +74,7 @@ var EthDappGenerator = yeoman.generators.Base.extend({
             this.src.copy('app.css', 'app.css');
 
             this.directory('images', 'images', function(body, src, dest, options) {
-              console.log(' + ' + src);
+                console.log(' + ' + src);
             })
         },
 
