@@ -1,6 +1,6 @@
 {
   "name": "generator-ethdapp",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Yeoman ethdapp generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -17,7 +17,8 @@
     "test": "mocha"
   },
   "files": [
-    "app"
+    "app",
+    "parity"
   ],
   "keywords": [
     "yeoman-generator",
